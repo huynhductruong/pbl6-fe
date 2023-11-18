@@ -1,0 +1,130 @@
+.header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(63, 62, 62);
+    font-family: Canva Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+.header-task:hover {
+    color: yellowgreen !important;
+    transition: all 0.2s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px gray solid;
+    padding-bottom: 3px;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+
+    .right-header-img {
+        width: 200px;
+        height: 50px;
+    }
+
+    .header-task {
+        text-decoration: none;
+        color: rgb(99, 96, 96);
+        margin-left: 40px;
+        font-size: 20px;
+    }
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+
+    .header-btn {
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 9px 20px 10px 20px;
+        
+        font-size: 20px;
+    }
+
+    .header-btn+.header-btn {
+        margin-left: 20px;
+    }
+    .header-btn:hover
+    {
+        color: yellowgreen !important;
+        transition: all 0.2s;
+    }
+    .sign-up:hover{
+        color: rgb(63, 52, 52) !important;
+        
+        background-color: rgb(202, 198, 198)!important;
+        transition: all 0.3s;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {}
+
+    .right-header {
+        .right-header-img {
+            width: 130px;
+            height: 35px;
+        }
+
+        .header-task {
+
+            margin-left: 27px;
+            font-size: 14px;
+        }
+    }
+
+    .left-header {
+        .header-btn {
+            border-radius: 20px;
+            padding: 6px 13px 7px 13px;
+            font-size: 14px;
+        }
+
+        .header-btn+.header-btn {
+            margin-left: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .header {}
+
+    .right-header {
+        .right-header-img {
+            width: 80px;
+            height: 23px;
+        }
+
+        .header-task {
+            margin-left: 18px;
+            font-size: 11px;
+        }
+    }
+
+    .left-header {
+        .header-btn {
+            border-radius: 12px;
+            padding: 4px 8px 5px 8px;
+            font-size: 11px;
+        }
+
+        .header-btn+.header-btn {
+            margin-left: 18px;
+            
+        }
+    }
+}
