@@ -620,7 +620,9 @@ input[type="file"] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    .hidden {
+        display: none;
+    }
     .upload-main {
         display: flex;
         flex-direction: column;
@@ -732,5 +734,114 @@ input[type="file"] {
             }
         }
 
+    }
+}
+.diagnosis-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ecf0f0;
+    .disagnoisis-main{
+        width: 90%;
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+    }
+}
+.disagnoisis-bot
+{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    .disagnoisis-upload{
+        border: 1px black solid;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        .hidden {
+            display: none;
+        }
+        .upload-boder-text
+        {
+            width: 90%;
+            border: 2px dashed black;
+            text-align: center;
+        }
+        .dis-btn
+        {
+            margin-top: 30px;
+            font-weight: bold;
+            background-color: #757f9a;
+            color: #fff;
+            padding: 7px 20px 10px 20px;
+            border-radius: 10px;
+        }
+        .btn-predict
+        {
+            cursor: pointer;
+            display: block;
+            margin-top: 30px;
+            font-weight: bold;
+            padding: 7px 20px 10px 20px;
+            border: 1px solid black;
+        }
+        .upload-boder-text
+        {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .upload-text
+            {
+                margin:30px 0px 30px 0px
+            }
+            .hidden
+            {
+                display: none;
+
+            }
+            .img-disagsis
+            {
+                width: 224px;
+                height: 224px;
+                margin: 10px 0 10px 0;
+            }
+        }
+    }
+    .disagnoisis-result
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex:1;
+        
+        .desagnoisis-result-img
+        {
+            width: 224px;
+            height: 224px;
+            margin: 10px 0 10px 0;
+        }
+        .result-disagnoisis
+        {
+            background-color: #334655;
+            width: 85%;
+            color: #fff;
+            text-align: center;
+            p 
+            {
+                margin: 10px 0 10px 0;
+            }
+            p + p{
+                margin-top: 10px;
+            }
+        }
     }
 }
