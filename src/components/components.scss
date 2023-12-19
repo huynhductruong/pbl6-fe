@@ -1,14 +1,20 @@
 .header {
+
     width: 90%;
     display: flex;
     justify-content: space-between;
+
+    .hidden {
+        display: none;
+    }
 }
 
 body {
     border-radius: 20px;
     text-decoration: none;
+    list-style-type: none;
     color: rgb(63, 62, 62);
-    font-family: Canva Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    font-family: Canva Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
 
 .header-task:hover {
@@ -50,22 +56,23 @@ body {
         font-weight: bold;
         border-radius: 30px;
         padding: 9px 20px 10px 20px;
-        
+
         font-size: 20px;
     }
 
     .header-btn+.header-btn {
         margin-left: 20px;
     }
-    .header-btn:hover
-    {
+
+    .header-btn:hover {
         color: yellowgreen !important;
         transition: all 0.2s;
     }
-    .sign-up:hover{
+
+    .sign-up:hover {
         color: rgb(63, 52, 52) !important;
-        
-        background-color: rgb(202, 198, 198)!important;
+
+        background-color: rgb(202, 198, 198) !important;
         transition: all 0.3s;
     }
 }
@@ -124,7 +131,76 @@ body {
 
         .header-btn+.header-btn {
             margin-left: 18px;
-            
+
         }
     }
+}
+
+.face-login {
+    color: #000;
+    position: relative;
+    width: 200px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+
+    .block {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+.face-login div {
+    background-color: rgb(161, 156, 156);
+    padding: 10px 20px 10px 0px;
+    margin: 10px 0 0 40px;
+    margin-left: 0px;
+    position: absolute;
+    width: 250px;
+    top: 72px;
+    left: 0px;
+    z-index: 1;
+    border-radius: 10px;
+
+    
+
+    
+}
+.face-login div a {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    text-align: center;
+    line-height: 0px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.face-login div a h5 {
+    margin-left: 12px;
+}
+
+.face-login div a:hover {
+    color: darkblue
+}
+
+.face-login div img {
+    height: 20px;
+    background-color: #083b62;
+    margin-left: 100px;
+
+}
+
+.face-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 500px;
+    margin: 15px 0px 10px 100px;
+    border: 1px rgb(184, 82, 82) solid;
+    cursor: pointer;
+
 }

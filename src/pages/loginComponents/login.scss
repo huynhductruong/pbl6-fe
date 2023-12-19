@@ -27,7 +27,10 @@
             align-items: center;
             justify-self: start;
             text-align: center;
-    
+            .hidden
+            {
+                display: none;
+            }
             .img-login
             {
                 width: 96px;
