@@ -93,7 +93,7 @@ const Diagnosis = () => {
                             <input type='file' id="upload-img" multiple onChange={handleFileChange} />
 
                         </div>
-                        <a className={selectedFile ? 'btn-predict' : 'hidden'} onClick={handlePredictCick}>START PREDICT</a>
+                        <a id='btn-predict-start' className={selectedFile ? 'btn-predict' : 'hidden'} onClick={handlePredictCick}>START PREDICT</a>
                         <p style={{ marginTop: "30px" }}>"Please use unblurred X-ray images in Jpeg,Png... up to 2mb in size."</p>
                         <div className='upload-boder-text'>
                             <p className={imagedis ? 'hidden' : 'upload-text'}>UPLOADED IMAGE RESULT</p>

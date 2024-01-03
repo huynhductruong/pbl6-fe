@@ -31,14 +31,14 @@ const UserLogin = (props) => {
     return (
         <div className='face-login' ref={menuRef} >
             <h5 className={vip?'nhapnhay vip':'hidden'}>VIP</h5>
-            <img className='face-img' src={props?.image ? props.image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZ3sl-uWEz_3FQhY92IoGCiRwUjDe73vUEg&usqp=CAU'} title={props?.name?props.name : 'Any One'} onClick={handleClick} >
+            <img id='img-profile-header' className='face-img' src={props?.image ? props.image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZ3sl-uWEz_3FQhY92IoGCiRwUjDe73vUEg&usqp=CAU'} title={props?.name?props.name : 'Any One'} onClick={handleClick} >
             </img>
             <div className={onHidden ? 'block' : 'hidden'}>
-                <a href={admin ? '/dashboard' : '/profile'}><AiFillDatabase></AiFillDatabase><h5>Quản lý tài khoản</h5></a>
+                <a id='setting-account' href={admin ? '/dashboard' : '/profile'}><AiFillDatabase></AiFillDatabase><h5>Quản lý tài khoản</h5></a>
                 <hr style={{width:"107.5%"}}/>
-                <a href='/history'  ><FaHistory></FaHistory><h5>Lịch sử</h5></a>
+                <a id='header-history' href='/history'  ><FaHistory></FaHistory><h5>Lịch sử</h5></a>
                 <hr style={{width:"107.5%"}}/>
-                <a href='/' onClick={handleClickLogOut} ><AiOutlinePoweroff></AiOutlinePoweroff><h5>Đăng xuất</h5></a>
+                <a id ='header-logout' href='/' onClick={handleClickLogOut} ><AiOutlinePoweroff></AiOutlinePoweroff><h5>Đăng xuất</h5></a>
             </div>
         </div>
 

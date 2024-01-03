@@ -44,11 +44,11 @@ const LoginComponents = () => {
 
                 <div style={{ display: "flex", flexDirection: "column", marginTop: "50px", marginBottom: "10px", backgroundColor: "#fff", borderRadius: "3px", border: "1px solid gray" }}>
                     <p style={{ fontWeight: "bold", fontSize: "30px", marginTop: "10px" }}>LOGIN</p>
-                    <div className="div-input"><input className="input-login" type="text" placeholder="Name" onChange={(e) => setName(e.target.value)}></input></div>
-                    <div className="div-input"><input className="input-login" type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}></input></div>
-                    <div className="div-input"><input className="input-login" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}></input></div>
-                    <div className="div-input"><input className="input-login" type="password" placeholder="Confirm Password" onChange={(e) => setConfirmPassword(e.target.value)}></input></div>
-                    <div onClick={HandleSubmit} style={hidden?{marginBottom: "80px",  marginTop: "10px" }:{ marginTop: "10px" }}><input style={{ width: "90%", height: "35px", backgroundColor: "black", color: "#fff" }} type="button" placeholder="Email" value="REGISTER" disabled={password === confirmPassword ? false : true}></input></div>
+                    <div className="div-input"><input id="name-register" className="input-login" type="text" placeholder="Name" onChange={(e) => setName(e.target.value)}></input></div>
+                    <div className="div-input"><input id="email-register" className="input-login" type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}></input></div>
+                    <div className="div-input"><input id="pass-register" className="input-login" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}></input></div>
+                    <div className="div-input"><input id="confirm-pass-register" className="input-login" type="password" placeholder="Confirm Password" onChange={(e) => setConfirmPassword(e.target.value)}></input></div>
+                    <div onClick={HandleSubmit} style={hidden?{marginBottom: "80px",  marginTop: "10px" }:{ marginTop: "10px" }}><input id="btn-register" style={{ width: "90%", height: "35px", backgroundColor: "black", color: "#fff" }} type="button" placeholder="Email" value="REGISTER" disabled={password === confirmPassword ? false : true}></input></div>
                     <p className={hidden ? 'hidden' : ''} style={{ marginBottom: "50px", color: 'red', fontWeight: "bold", marginTop: "10px" }}>{err?err:'Username or password is incorrect'}</p>
 
                 </div>

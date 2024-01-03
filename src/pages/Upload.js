@@ -95,7 +95,7 @@ const Upload = () => {
                     </div>
                     <div className='dowload'>
 
-                        <a className='dowload-btn' href={imageDenoise} download="denoised_image.jpg">Download</a>
+                        <a id='download-denoise-image' className='dowload-btn' href={imageDenoise} download="denoised_image.jpg">Download</a>
                     </div>
                 </div>
 

@@ -1,5 +1,3 @@
-import { BsFacebook } from "react-icons/bs";
-import { FcGoogle } from "react-icons/fc";
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
@@ -39,9 +37,9 @@ const LoginComponents = () => {
                         <div style={{ display: "flex", flexDirection: "column", marginTop: "50px", backgroundColor: "#fff", borderRadius: "3px", border: "1px solid gray" }}>
                             <p style={{ fontWeight: "bold", fontSize: "30px", marginTop: "10px" }}>LOGIN</p>
 
-                            <div className="div-input"><input onChange={(e) => setEmail(e.target.value)} className="input-login" type="text" placeholder="Email"></input></div>
-                            <div className="div-input"><input onChange={(e) => setPassword(e.target.value)} className="input-login" type="password" placeholder="Password"></input></div>
-                            <div style={{ marginTop: "10px" }}><input style={{ width: "90%", height: "35px", backgroundColor: "black", color: "#fff" }} type="button" value="LOGIN" onClick={HandleSubmit}></input></div>
+                            <div className="div-input"><input id='email-login' onChange={(e) => setEmail(e.target.value)} className="input-login" type="text" placeholder="Email"></input></div>
+                            <div className="div-input"><input id='pass-login' onChange={(e) => setPassword(e.target.value)} className="input-login" type="password" placeholder="Password"></input></div>
+                            <div style={{ marginTop: "10px" }}><input id='btn-login' style={{ width: "90%", height: "35px", backgroundColor: "black", color: "#fff" }} type="button" value="LOGIN" onClick={HandleSubmit} ></input></div>
                             <a style={{ marginBottom: "60px", marginTop: "20px" }} href="">Forgot Password?</a>
                             <p className={hidden ? 'hidden' : ''} style={{ marginBottom: "60px", color: 'red', fontWeight: "bold", marginTop: "10px" }}>{err ? err : 'Email Or Password Incorrect Format'}</p>
                         </div>

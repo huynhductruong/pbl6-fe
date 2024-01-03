@@ -97,16 +97,16 @@ function Profile() {
             <div className='profile'>
                 <div className='profile-main'>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <img src={imagePreview ? imagePreview : '#'} className='profile-image'></img>
+                        <img id='img-profile' src={imagePreview ? imagePreview : '#'} className='profile-image'></img>
                         <label for='image' className='file-lable'>Update image</label>
                         <input type='file' id='image' className='hidden' onChange={handleFileChange} ></input>
                     </div>
-                    <div className="profile-div-input"><input className="input-profile" type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} value={name}></input></div>
+                    <div className="profile-div-input"><input className="input-profile" id='name' type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} value={name}></input></div>
 
-                    <div className="profile-div-input"><input className="input-profile" type="text" placeholder="Email" value={email} disabled></input></div>
-                    <div className="profile-div-input"><input className="input-profile" type="text" placeholder="Address" onChange={(e) => setAddress(e.target.value)} value={address}></input></div>
-                    <div className="profile-div-input"><input className="input-profile" type="text" placeholder="Phone Number" onChange={(e) => setPhoneNumber(e.target.value)} value={phone}></input></div>
-                    <p className='btn-update-profile' onClick={handleUpdateClick}>UPDATE</p>
+                    <div className="profile-div-input"><input className="input-profile" id='email' type="text" placeholder="Email" value={email} disabled></input></div>
+                    <div className="profile-div-input"><input className="input-profile" id='address' type="text" placeholder="Address" onChange={(e) => setAddress(e.target.value)} value={address}></input></div>
+                    <div className="profile-div-input"><input className="input-profile" id='phone' type="text" placeholder="Phone Number" onChange={(e) => setPhoneNumber(e.target.value)} value={phone}></input></div>
+                    <p className='btn-update-profile' onClick={handleUpdateClick} id='btn-update' >UPDATE</p>
                 </div>
             </div></>
     )
